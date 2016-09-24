@@ -12,7 +12,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.frame.test.util.IfsPreDeal;
 
-public class CaseInput {
+public class ContentTran {
 	@IfsPreDeal(infname = "uselogin")
 	public String UserAddLogin(String inputdata) throws JsonGenerationException, JsonMappingException, IOException
 	{
@@ -73,5 +73,4 @@ public class CaseInput {
 	     }
 		return array;
 	}
-
 }
