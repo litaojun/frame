@@ -7,6 +7,7 @@ import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
+import com.run.test.tcase.data.input.ContentInfo;
 import com.run.test.tcase.infs.UserAddInfo;
 import com.run.test.util.ResultCompare;
 
@@ -15,7 +16,7 @@ public class TestContentresultResultMatch
 	private ObjectMapper objectMapper = new ObjectMapper();
 
 	@ResultCompare(ifname = "contentadd", cstype = 0,rule = {}, cls = Class.class)
-	 public String matchparamContentadd0(String rspinf,UserAddInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
+	 public String matchparamContentadd0(String rspinf,ContentInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
 	 {
 //		    System.out.println("matchparamfunsstt0");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
@@ -27,7 +28,7 @@ public class TestContentresultResultMatch
 	        return stra ;
 	 }
 	 @ResultCompare(ifname = "contentadd", cstype = 1,rule = {3,12}, cls = Class.class)
-	 public String matchparamContentadd1(String rspinf,UserAddInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
+	 public String matchparamContentadd1(String rspinf,ContentInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
 	 {
 //		    System.out.println("matchparamfunsstt1");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
@@ -39,7 +40,7 @@ public class TestContentresultResultMatch
 	        return stra ;
 	 }
 	 @ResultCompare(ifname = "contentadd", cstype = 1,rule = {14}, cls = Class.class)
-	 public String matchparamContentadd2(String rspinf,UserAddInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
+	 public String matchparamContentadd2(String rspinf,ContentInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
 	 {
 //		 System.out.println("matchparamfunsstt11");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
@@ -51,7 +52,7 @@ public class TestContentresultResultMatch
 	        return stra ;
 	 }
 	 @ResultCompare(ifname = "contentadd", cstype = 2,rule = {4,12}, cls = Class.class)
-	 public String matchparamContentadd3(String rspinf,UserAddInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
+	 public String matchparamContentadd3(String rspinf,ContentInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
 	 {
 //		 System.out.println("matchparamfunsstt2");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
@@ -63,7 +64,7 @@ public class TestContentresultResultMatch
 	        return stra ;
 	 }
 	 @ResultCompare(ifname = "contentadd", cstype = 3,rule = {13,22,1}, cls = Class.class)
-	 public String matchparamContentadd4(String rspinf,UserAddInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
+	 public String matchparamContentadd4(String rspinf,ContentInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
 	 {
 //		 System.out.println("matchparamfunsstt2");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));

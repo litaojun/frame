@@ -14,7 +14,7 @@ public class TestUserdelResultMatch
 {
 	private ObjectMapper objectMapper = new ObjectMapper();
 	@ResultCompare(ifname = "userdel", cstype = 0,rule = {}, cls = Class.class)
-	 public String matchparamUserdel0(String rspinf,UserAddInfo uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
+	 public String matchparamUserdel0(String rspinf,String uaif,String yqrst) throws JsonGenerationException, JsonMappingException, IOException 
 	 {
 //		    System.out.println("matchparamfunsstt0");
 //	    	System.out.println(String.format("name=%s,age=%s,nickname=%s", new String[]{uaif.getUsername(),uaif.getPassword(),uaif.getNickname()}));
